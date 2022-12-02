@@ -17,13 +17,11 @@ int numB = int.Parse(Console.ReadLine());
 if (numA > numB) {
     max = numA;
     min = numB;
-    //Console.WriteLine("numA > numB");
-} else {
+    Console.WriteLine("numA > numB");
+} else if (numA < numB) {
     max = numB;
     min = numA;  
-    //Console.WriteLine("numB > numA");
+    Console.WriteLine("numB > numA");
+} else {
+    Console.WriteLine("numB = numA");
 }
-Console.Write("max = ");
-Console.WriteLine(max);
-// Console.Write("min = ");
-// Console.WriteLine(min);
