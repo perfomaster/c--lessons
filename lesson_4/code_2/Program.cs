@@ -6,3 +6,20 @@
 82 -> 10
 9012 -> 12
 */
+
+int number = int.Parse(Console.ReadLine());
+
+bool flag = true;
+int index = 0, result = 0;
+
+while (flag) {
+    int num = (int)(number / Math.Pow(10, index)) % 10;
+    if ((number / Math.Pow(10, index)) < 10) {
+        flag = false;
+    }
+    result += num;
+    index += 1;
+}
+
+Console.WriteLine(result);
+
