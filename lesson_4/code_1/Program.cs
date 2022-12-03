@@ -7,3 +7,17 @@
  Не использовать Math.Pow()
 */
 
+int A = int.Parse(Console.ReadLine());
+int B = int.Parse(Console.ReadLine());
+
+Console.WriteLine(mathPow(A, B));
+
+int mathPow (int a, int b) {
+    int index = 0, result = a;
+    
+    while (index < b - 1) {
+        result *= (int)a;
+        index += 1;
+    }
+    return result;
+}
